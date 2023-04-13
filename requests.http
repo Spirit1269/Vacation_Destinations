@@ -1,0 +1,29 @@
+GET http://localhost:3010
+
+
+###
+GET http://localhost:3010/api/vacations
+
+###
+GET http://localhost:3010/api/vacations/1
+
+###
+POST http://localhost:3010/api/vacations
+
+Content-Type: application/json
+{
+    "country": "France",
+    "city_state": "Paris",
+    "climate": "cold"
+}
+
+###
+DELETE http://localhost:3010/api/vacations/4
+
+###
+PATCH http://localhost:3010/api/vacations/5
+
+Content-Type: application/json
+{
+  "climate": "hot",
+}
